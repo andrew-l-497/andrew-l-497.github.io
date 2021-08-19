@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap");
 body {
+    background-color: #364f63;
     margin: 60px auto;
     width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif', 'Avenir';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -14,19 +17,20 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #c3c3c3;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif', 'Avenir';
+    font-size: 2.5em;
+    font-family: 'Roboto Slab', serif;
+    color: #eaeaea;
 }
 p {
     font-size: 1.4em;
     line-height: 1.4em;
-    color: #333;
+    color: #dcdfea;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -40,4 +44,32 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+img {
+  width: 90%;
+  border-radius: 20%;
+  padding: 5%;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-right: 20px;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
 }
